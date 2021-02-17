@@ -23,6 +23,9 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
+#one {
+    color:coral
+}
 
 hr {
     display: block;
@@ -393,4 +396,4 @@ nav a:hover {
     h3 {
         page-break-after: avoid;
     }
-}
+    
