@@ -35,6 +35,14 @@
         </div>
         <div class="main-container">
             <div class="main wrapper clearfix">
+                <script>
+   function toSubmit(){
+      alert('I will not submit');
+      return false;
+   }
+</script>
+
+<form onsubmit="return toSubmit();" >
 
                     <div>
                <div>
@@ -50,6 +58,7 @@
     <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
   </div>  
   <input type="submit" value="Submit" id="input-submit">
+    
 </form>     
                    </article>
                         </div>
