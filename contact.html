@@ -35,20 +35,15 @@
         </div>
         <div class="main-container">
             <div class="main wrapper clearfix">
-                <script>
-   function toSubmit(){
-      alert('I will not submit');
-      return false;
-   }
-</script>
+               
 
-<form onsubmit="return toSubmit();" >
+
 
                     <div>
                <div>
                    <article>
 <h1>Contact Me</h1>
-<form class="cf">
+<form class="cf" onsubmit="formAlert(); return false;">
   <div class="half left cf">
     <input type="text" id="input-name" placeholder="Name">
     <input type="email" id="input-email" placeholder="Email address">
@@ -63,7 +58,20 @@
                    </article>
                         </div>
                 </div>
-
+                </form>
+                 <script>
+   function formAlert() {
+    alert_string = '';
+    alert_string = alert_string + document.getElementById('input-name').value;
+    alert_string = alert_string + ' ';
+    alert_string = alert_string + document.getElementById('input-email').value;
+    alert_string = alert_string + ' ';
+    alert_string = alert_string + document.getElementById('input-subject').value;
+    alert_string = alert_string + ' ';
+    alert_string = alert_string + document.getElementById('input-message').value;
+    alert(alert_string);
+}
+</script>
 </div> <!-- #main -->
         </div> <!-- #main-container -->
  
